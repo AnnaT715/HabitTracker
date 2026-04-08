@@ -11,9 +11,18 @@
         <title>{% block title %}{%endblock%}</title>
     </head>
     <body>
-        
-        <header><h2>Habit Tracker</h2></header>
-        {% block content %}
-        {%endblock%}
+        <aside>
+            <span class="Logo">HabitTracker</span>
+            <h3>Навигация</h3>
+            <ul>
+                <a href="/"><li>Все привычки</li></a>
+                <a href="/createhabit"><li>Создать привычку</li></a>
+                <a href=""><li>Профиль</li></a>
+            </ul>
+        </aside>
+        <main>
+            {% block content %}
+            {%endblock%}
+        </main>
     </body>
 </html>  
